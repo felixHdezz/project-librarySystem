@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C21DAB5-B1E8-4466-BEA5-7E0297631A49}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Proyecto_biblioteca.My.MyApplication</StartupObject>
+    <RootNamespace>Proyecto_biblioteca</RootNamespace>
+    <AssemblyName>Proyecto_biblioteca</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Proyecto_biblioteca.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Proyecto_biblioteca.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Pictures\Nueva carpeta\Nueva carpeta\Nueva carpeta - copia - copia\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>..\..\..\..\..\Pictures\Nueva carpeta\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>..\..\..\..\..\Pictures\Nueva carpeta\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\re\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agregar_autor.Designer.vb">
+      <DependentUpon>Agregar_autor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar_autor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar_clasificacion.Designer.vb">
+      <DependentUpon>Agregar_clasificacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar_clasificacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar_editorial.Designer.vb">
+      <DependentUpon>Agregar_editorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agregar_editorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ayuda.Designer.vb">
+      <DependentUpon>ayuda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ayuda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="catalogos.Designer.vb">
+      <DependentUpon>catalogos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="catalogos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cerrar.Designer.vb">
+      <DependentUpon>cerrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cerrar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="conexion\conexion.vb" />
+    <Compile Include="acceso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="acceso.Designer.vb">
+      <DependentUpon>acceso.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="conexion\query.vb" />
+    <Compile Include="Devolucion.Designer.vb">
+      <DependentUpon>Devolucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Devolucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inventario.Designer.vb">
+      <DependentUpon>inventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulo_libros.Designer.vb">
+      <DependentUpon>Modulo_libros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo_libros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Multas.Designer.vb">
+      <DependentUpon>Multas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Multas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Prestamos.Designer.vb">
+      <DependentUpon>Prestamos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Prestamos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="principal.Designer.vb">
+      <DependentUpon>principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="progressbar.Designer.vb">
+      <DependentUpon>progressbar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="progressbar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar_empleado.Designer.vb">
+      <DependentUpon>Registrar_empleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registrar_empleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar_cliente.Designer.vb">
+      <DependentUpon>Registrar_cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Registrar_cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporteprestamo.Designer.vb">
+      <DependentUpon>reporteprestamo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reporteprestamo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes.Designer.vb">
+      <DependentUpon>Reportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad.Designer.vb">
+      <DependentUpon>Seguridad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="acceso.resx">
+      <DependentUpon>acceso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agregar_autor.resx">
+      <DependentUpon>Agregar_autor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agregar_clasificacion.resx">
+      <DependentUpon>Agregar_clasificacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agregar_editorial.resx">
+      <DependentUpon>Agregar_editorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ayuda.resx">
+      <DependentUpon>ayuda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="catalogos.resx">
+      <DependentUpon>catalogos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cerrar.resx">
+      <DependentUpon>cerrar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devolucion.resx">
+      <DependentUpon>Devolucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inventario.resx">
+      <DependentUpon>inventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo_libros.resx">
+      <DependentUpon>Modulo_libros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Multas.resx">
+      <DependentUpon>Multas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestamos.resx">
+      <DependentUpon>Prestamos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="principal.resx">
+      <DependentUpon>principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="progressbar.resx">
+      <DependentUpon>progressbar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrar_empleado.resx">
+      <DependentUpon>Registrar_empleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrar_cliente.resx">
+      <DependentUpon>Registrar_cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporteprestamo.resx">
+      <DependentUpon>reporteprestamo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes.resx">
+      <DependentUpon>Reportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad.resx">
+      <DependentUpon>Seguridad.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlCommand.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlCommandBuilder.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlConnection.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlDataAdapter.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlDataReader.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlError.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlException.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlHelper.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlInfoMessageEventArgs.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlInfoMessageEventHandler.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlParameter.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlParameterCollection.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlRowUpdatedEventArgs.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlRowUpdatedEventHandler.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlRowUpdatingEventArgs.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlRowUpdatingEventHandler.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.MySqlClient.MySqlTransaction.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.Types.MySqlConversionException.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.Types.MySqlDateTime.datasource" />
+    <None Include="My Project\DataSources\MySql.Data.Types.MySqlValue.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Acrobat">
+      <Guid>{E64169B3-3592-47D2-816E-602C5C13F328}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxNitroPDFLib">
+      <Guid>{3422E9DB-7B00-4552-B016-6FBF93C5A2D8}</Guid>
+      <VersionMajor>7</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxNitroPDF_IE_ActiveDocLib">
+      <Guid>{73BA4610-4C33-4056-9141-9C3E3DF75428}</Guid>
+      <VersionMajor>7</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="NitroPDFLib">
+      <Guid>{3422E9DB-7B00-4552-B016-6FBF93C5A2D8}</Guid>
+      <VersionMajor>7</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="NitroPDF_IE_ActiveDocLib">
+      <Guid>{73BA4610-4C33-4056-9141-9C3E3DF75428}</Guid>
+      <VersionMajor>7</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
